@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: 'Erotique';
+    src:  url("./font/erotique/ErotiqueTrial-Bold.ttf");
+  }
+
+@font-face {
+    font-family: 'Erotique Alt';
+    src: url('./font/erotique/ErotiqueAlternateTrial-Bold.ttf');
+  }
+
+body {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: Erotique;
+    font-size: 15vh;
+}
+
+span {
+    font-family: Erotique Alt;
+}
+.nav-container {
+    background: transparent;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.contaner {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    background-color: white;
+    position: relative;
+}
